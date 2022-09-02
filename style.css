@@ -197,6 +197,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
+  margin: 0 auto;
 }
 .project-card h2 {
   color: white;
