@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+:root {
+  font-size: 62.5%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  /* outline: 2px red solid; */
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+/* Utility Classes */
+.btn {
+  padding: 10px 20px;
+  font-size: 1.6rem;
+  font-weight: 500;
+  border: none;
+  background-color: #c91b28;
+  color: white;
+}
+
+.nav-container {
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
+  width: 100%;
+  height: 80px;
+  background-color: #111111;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  padding: 10;
+  align-items: center;
+}
+.nav-container-brand img {
+  height: 30px;
+}
+.nav-container-menu {
+  display: none;
+}
+.nav-container-menu ul li {
+  color: white;
+}
+
+.nav-container i {
+  display: block;
+  color: white;
+  font-size: 2.4rem;
+}
+/* Hero section ------------------------------ */
+
+.hero {
+  width: 100%;
+  padding: 2.4rem;
+  background: #111111;
+}
+.hero-left {
+  width: 100%;
+}
+.hero-left img {
+  width: 100%;
+}
+
+.hero-right {
+  padding-top: 2.4rem;
+  padding-bottom: 2.4rem;
+}
+.hero-title {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  color: white;
+}
+.hero-title h3 {
+  color: #c91b28;
+}
+.hero-title h1 {
+  /* color: white; */
+  font-size: 4.8rem;
+  font-weight: 900;
+}
+.hero-title p {
+  font-size: 1.4rem;
+  padding-right: 2.4rem;
+}
+.hero-title-cta {
+  margin-top: 2.4rem;
+  margin-bottom: 2.4rem;
+}
+
+/* Main Section -------------------------------------------------------------------------- */
+.main {
+  width: 100%;
+}
+.main-service {
+  background-color: #111111;
+  display: flex;
+  justify-content: center;
+}
+.main-service-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  padding: 2.4rem;
+  justify-content: center;
+}
+.main-service-card {
+  width: 24rem;
+  padding: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  color: white;
+  background-color: #1e1e1e;
+}
+.main-service-card-link {
+  color: #c91b28;
+}
+.active-card {
+  background-color: #c91b28;
+}
+.active-card .main-service-card-link {
+  color: white;
+}
+.main-num {
+  color: white;
+  display: grid;
+  background-color: #111111;
+  gap: 2.4rem;
+  padding-bottom: 5.6rem;
+}
+.main-num-col-1,
+.main-num-col-2,
+.main-num-col-3 {
+  width: 240px;
+  margin: 0 auto;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.main-num-col-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+}
+.main-num-col-1 h1 {
+  font-size: 7.2rem;
+}
+.main-num-col-1 p {
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+.num-card {
+  height: 11rem;
+  width: 100%;
+  background-color: #1e1e1e;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.num-card h1 {
+  color: #c91b28;
+  font-size: 4.8rem;
+}
+
+/* ---------------------------for large screen-------------------------------------------- */
+
+@media screen and (min-width: 640px) {
+  .nav-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  .nav-container-menu {
+    display: block;
+  }
+  .nav-container-menu ul {
+    display: flex;
+    flex-direction: row;
+  }
+  .nav-container-menu ul li {
+    padding: 5px 15px;
+    list-style: none;
+  }
+  .nav-container i {
+    display: none;
+  }
+
+  /* Hero Section ----------------------------------------- */
+  .hero {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+  }
+  .hero-left {
+    width: 50%;
+  }
+  .hero-right {
+    width: 50%;
+    display: flex;
+    align-items: center;
+  }
+  .hero-title {
+    max-width: 540px;
+  }
+  .hero-title h3 {
+  }
+  .hero-title h1 {
+    font-size: 7.2rem;
+  }
+  .hero-title p {
+    font-size: 1.4rem;
+  }
+  .hero-title-cta {
+  }
+
+  /* main section ---------------------------------------------------------------------- */
+  .main {
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: #111111;
+    padding-bottom: 8.6rem;
+    padding-top: 5.6rem;
+  }
+  .main-service {
+    padding-top: 4.8rem;
+    padding-bottom: 4.8rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .main-service-cards {
+    flex-direction: row;
+  }
+  .main-num {
+    max-width: 800px;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+  }
+}
